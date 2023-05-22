@@ -9,7 +9,7 @@ def get_value(text_list, weights, iou_thr=0.5, skip_box_thr=0.0001):
     labels_list = []
     
     for text in text_list:
-        arr = text.split(' ')[:-1]
+        arr = str(text).split(' ')[:-1]
         labels = []
         scores = []
         boxes = []
